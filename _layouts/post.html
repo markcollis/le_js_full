@@ -23,7 +23,7 @@ layout: default
       <ul class="blog-title-list">
         {% for post in site.posts limit:5 %}
           <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             <span>Posted: {{ post.date | date: '%B %d, %Y' }}</span>
           </li>
         {% endfor %}
